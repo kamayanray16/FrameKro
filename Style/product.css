@@ -1,0 +1,82 @@
+.box{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.sub-box{
+    
+    height: 80vh;
+    width: 100%;
+}
+.sub-box:nth-child(2){
+    margin-top: 50px;
+}
+
+.prod-btn {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(1, 250, 175);
+    cursor: pointer;
+    color: rgb(5, 5, 5);
+    border: 2px solid black;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-90px);
+}
+.link a{
+    display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.link a:hover
+{
+  letter-spacing: 6px;
+}
+#anime-vid{
+    /* border-radius: 40px; */
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid rgb(0, 0, 0);
+  opacity: 0.9;
+}
+#sports-vid{
+    /* border-radius: 40px; */
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid black;
+  opacity: 0.9;
+}
+
+@media (min-width:900px) {
+    .box{
+        display: flex;
+        height: 450px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .sub-box{
+        width: 100%;
+        height: 100%;
+        flex-basis: 48%;
+    }
+    .sub-box:nth-child(2){
+        margin-top: 0px;
+    }
+}

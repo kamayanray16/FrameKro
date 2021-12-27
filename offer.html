@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Style/offer.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+</head>
+<body>
+    <section class="showcase" >
+        <header>
+          <a href="index.html" style="text-decoration: none;"><h2 class="logo">Frame Kro</h2></a>
+          <div class="toggle"></div>
+        </header>
+        <div class="heading">
+            <h2>Offers</h2>
+            <hr>
+        </div>
+        <div class="box">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="./Images/Offer/o1.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Images/Offer/o2.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+       
+       
+      </section>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="offer.html">Offers</a></li>
+          <li><a href="Products.html">Products</a></li>
+        </ul>
+      </div>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    
+      <script>
+          const menuToggle = document.querySelector('.toggle');
+          const showcase = document.querySelector('.showcase');
+    
+          menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+          })
+
+
+          var swiper = new Swiper(".mySwiper", {
+            grabCursor: true,
+            autoplay: {
+          delay: 2000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+      </script>
+</body>
+</html>

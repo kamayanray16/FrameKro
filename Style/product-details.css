@@ -1,0 +1,190 @@
+
+.showcase{
+    padding: 20px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(2, 253, 220);
+}
+
+
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box {
+  
+  width: 100%;
+  
+  height: 580px;
+  margin-top: 15px;
+}
+
+.sub-box {
+  flex-basis: 48%;
+  /* background-color: white; */
+  height: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+.sub-box:nth-child(2){
+    height: 630px;
+}
+.sub-box li {
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  /* list-style: circle;
+  list-style-type: circle; */
+}
+
+.details{
+    padding: 15px;
+}
+
+.sub-text{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.sub-text hr{
+   border: 2px solid black;
+    
+}
+
+
+
+h3{
+    color: rgb(0, 0, 0);
+}
+
+.price{
+    /* background-color: red; */
+    height: 100%;
+    overflow: hidden;
+}
+.show{
+    display: block;
+}
+.show2{
+    display: none;
+}
+
+
+
+
+
+ 
+
+  .swiper4 {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  /* .swiper-slide2 {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+   
+  }
+
+  .swiper-slide2 img {
+    display: block;
+    width: 100%;
+  } */
+
+
+  
+
+  
+
+
+
+
+
+
+@media (min-width:900px) {
+    .box{
+        display: flex;
+  justify-content: space-between;
+  height: 600px;
+  margin-top: 50px;
+    }
+   
+    .showcase{
+        padding: 100px;
+    }
+    .show{
+        display: none;
+    }
+    .show2{
+        display: block;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+<body>
+  <section class="showcase" style="display: flex; background-color: #111;">
+    <header>
+      <a href="index.html" style="text-decoration: none;"><h2 class="logo">Frame Kro</h2></a>
+      <div class="toggle"></div>
+    </header>
+    <!-- <video id="main-vid" src="./goku.mp4" controls loop autoplay></video> -->
+    <video id="main-vid" src="./Video/frame.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Issliye Jo Dikhe frame kro </h2> 
+     
+      <a href="Products.html">PRODUCTS</a>
+    </div>
+   
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="offer.html">Offers</a></li>
+      <li><a href="Products.html">Products</a></li>
+    </ul>
+  </div>
+  <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+</body>
+</html>
